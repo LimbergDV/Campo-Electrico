@@ -1,0 +1,51 @@
+.text1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+}
+
+.text-principal {
+    background-color: rgb(146, 215, 192);
+    padding: 30px;
+}
+
+.principal-cargas {
+    margin-top: 5vh;
+    margin-left: 5vh;
+}
+
+.titulo-cargas {
+    text-align: center;
+}
+
+.carga-1 {
+    margin-left: 5vh;
+    color: violet;
+}
+
+.carga-2 {
+    margin-left: 5vh;
+    margin-top: 2vh;
+}
+
+.carga-3 {
+    margin-left: 5vh;
+    margin-top: 2vh;
+}
+
+.carga-4 {
+    margin-left: 5vh;
+    margin-top: 2vh;
+}
+
+.carga-5 {
+    margin-left: 5vh;
+    margin-top: 2vh;
+}
+
+.btn {
+    margin-left: 5vh;
+    width: 30.5%;
+    color: whitesmoke;
+}
