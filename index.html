@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo del Campo Eléctrico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cálculo del Campo Eléctrico</h1>
+    
+    <div>
+        <label for="pointX">Coordenada X del punto (m):</label>
+        <input type="number" id="pointX" placeholder="Ingrese X en metros" required>
+    </div>
+    <div>
+        <label for="pointY">Coordenada Y del punto (m):</label>
+        <input type="number" id="pointY" placeholder="Ingrese Y en metros" required>
+    </div>
+    <div>
+        <label for="pointZ">Coordenada Z del punto (m):</label>
+        <input type="number" id="pointZ" placeholder="Ingrese Z en metros" required>
+    </div>
+    
+    <h2>Cargas</h2>
+
+    <div>
+        <label for="q1">Carga 1 (C):</label>
+        <input type="number" id="q1" placeholder="Ingrese carga 1">
+        <label for="q1Unit">Unidad:</label>
+        <select id="q1Unit">
+            <option value="micro">Microcoulombs (μC)</option>
+            <option value="nano">Nanocoulombs (nC)</option>
+        </select>
+    </div>
+    <div>
+        <label for="q1PositionX">Posición X (m):</label>
+        <input type="number" id="q1PositionX" placeholder="X en metros">
+        <label for="q1PositionXUnit">Unidad:</label>
+        <select id="q1PositionXUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+    <div>
+        <label for="q1PositionY">Posición Y (m):</label>
+        <input type="number" id="q1PositionY" placeholder="Y en metros">
+        <label for="q1PositionYUnit">Unidad:</label>
+        <select id="q1PositionYUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+    <div>
+        <label for="q1PositionZ">Posición Z (m):</label>
+        <input type="number" id="q1PositionZ" placeholder="Z en metros">
+        <label for="q1PositionZUnit">Unidad:</label>
+        <select id="q1PositionZUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+
+
+    <div>
+        <label for="q2">Carga 2 (C):</label>
+        <input type="number" id="q2" placeholder="Ingrese carga 2">
+        <label for="q2Unit">Unidad:</label>
+        <select id="q2Unit">
+            <option value="micro">Microcoulombs (μC)</option>
+            <option value="nano">Nanocoulombs (nC)</option>
+        </select>
+    </div>
+    <div>
+        <label for="q2PositionX">Posición X (m):</label>
+        <input type="number" id="q2PositionX" placeholder="X en metros">
+        <label for="q2PositionXUnit">Unidad:</label>
+        <select id="q2PositionXUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+    <div>
+        <label for="q2PositionY">Posición Y (m):</label>
+        <input type="number" id="q2PositionY" placeholder="Y en metros">
+        <label for="q2PositionYUnit">Unidad:</label>
+        <select id="q2PositionYUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+    <div>
+        <label for="q2PositionZ">Posición Z (m):</label>
+        <input type="number" id="q2PositionZ" placeholder="Z en metros">
+        <label for="q2PositionZUnit">Unidad:</label>
+        <select id="q2PositionZUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="q3">Carga 3 (C):</label>
+        <input type="number" id="q3" placeholder="Ingrese carga 3">
+        <label for="q3Unit">Unidad:</label>
+        <select id="q3Unit">
+            <option value="micro">Microcoulombs (μC)</option>
+            <option value="nano">Nanocoulombs (nC)</option>
+        </select>
+    </div>
+    <div>
+        <label for="q3PositionX">Posición X (m):</label>
+        <input type="number" id="q3PositionX" placeholder="X en metros">
+        <label for="q3PositionXUnit">Unidad:</label>
+        <select id="q3PositionXUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+    <div>
+        <label for="q3PositionY">Posición Y (m):</label>
+        <input type="number" id="q3PositionY" placeholder="Y en metros">
+        <label for="q3PositionYUnit">Unidad:</label>
+        <select id="q3PositionYUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+    <div>
+        <label for="q3PositionZ">Posición Z (m):</label>
+        <input type="number" id="q3PositionZ" placeholder="Z en metros">
+        <label for="q3PositionZUnit">Unidad:</label>
+        <select id="q3PositionZUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="q4">Carga 4 (C):</label>
+        <input type="number" id="q4" placeholder="Ingrese carga 4">
+        <label for="q4Unit">Unidad:</label>
+        <select id="q4Unit">
+            <option value="micro">Microcoulombs (μC)</option>
+            <option value="nano">Nanocoulombs (nC)</option>
+        </select>
+    </div>
+    <div>
+        <label for="q4PositionX">Posición X (m):</label>
+        <input type="number" id="q4PositionX" placeholder="X en metros">
+        <label for="q4PositionXUnit">Unidad:</label>
+        <select id="q4PositionXUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+    <div>
+        <label for="q4PositionY">Posición Y (m):</label>
+        <input type="number" id="q4PositionY" placeholder="Y en metros">
+        <label for="q4PositionYUnit">Unidad:</label>
+        <select id="q4PositionYUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+    <div>
+        <label for="q4PositionZ">Posición Z (m):</label>
+        <input type="number" id="q4PositionZ" placeholder="Z en metros">
+        <label for="q4PositionZUnit">Unidad:</label>
+        <select id="q4PositionZUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="q5">Carga 5 (C):</label>
+        <input type="number" id="q5" placeholder="Ingrese carga 5">
+        <label for="q5Unit">Unidad:</label>
+        <select id="q5Unit">
+            <option value="micro">Microcoulombs (μC)</option>
+            <option value="nano">Nanocoulombs (nC)</option>
+        </select>
+    </div>
+    <div>
+        <label for="q5PositionX">Posición X (m):</label>
+        <input type="number" id="q5PositionX" placeholder="X en metros">
+        <label for="q5PositionXUnit">Unidad:</label>
+        <select id="q5PositionXUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+    <div>
+        <label for="q5PositionY">Posición Y (m):</label>
+        <input type="number" id="q5PositionY" placeholder="Y en metros">
+        <label for="q5PositionYUnit">Unidad:</label>
+        <select id="q5PositionYUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+    <div>
+        <label for="q5PositionZ">Posición Z (m):</label>
+        <input type="number" id="q5PositionZ" placeholder="Z en metros">
+        <label for="q5PositionZUnit">Unidad:</label>
+        <select id="q5PositionZUnit">
+            <option value="m">Metros</option>
+            <option value="yard">Yardas</option>
+            <option value="inch">Pulgadas</option>
+            <option value="mm">Milímetros</option>
+            <option value="feet">Pies</option>
+        </select>
+    </div>
+
+    <button onclick="calculateField()">Calcular Campo Eléctrico</button>
+
+    <h2 id="result">Resultado Total: E_x = 0 N/C, E_y = 0 N/C, E_z = 0 N/C</h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
