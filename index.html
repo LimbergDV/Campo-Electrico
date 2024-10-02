@@ -255,9 +255,22 @@
         </select>
     </div>
 
-    <button onclick="calculateField()">Calcular Campo Eléctrico</button>
+    <button onclick="calcularCampo()">Calcular Campo Eléctrico</button>
 
-    <h2 id="result">Resultado Total: E_x = 0 N/C, E_y = 0 N/C, E_z = 0 N/C</h2>
+    <h2 id="result">Resultado Total: ax = 0 N/C, ay = 0 N/C, az = 0 N/C</h2>
+
+    <div id="process">
+        <h2>Procedimiento</h2>
+        <p id="inicio"></p>
+        <p id="carga"></p>
+        <p id="conversionCarga"></p>
+        <p id="cargaConvertida"></p>
+        <p id="convertirDistancia"></p>
+        <p id="posicionConvertida"></p>
+        <p id="denominador"></p>
+        <p id="magnitud"></p>
+        <p id="contribucion"></p>
+    </div>
 
     <script src="script.js"></script>
 </body>
