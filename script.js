@@ -1,4 +1,4 @@
-const E0 = 8.854187817e-12; // Constante de permitividad del vacío
+const E0 = 8.854187817e-12;
 
 function convertirCarga(carga, unidad) {
   if (carga) {
@@ -69,14 +69,14 @@ function calcularCampo() {
         `Carga ${i}: ${carga} ${unidadCarga} en (${posicionX}, ${posicionY}, ${posicionZ}) <br>`;
     }
 
-    // Convertir carga
+    //Convertir carga
     carga = convertirCarga(carga, unidadCarga);
 
     if (carga) {
       document.getElementById("cargaConvertida").innerHTML += `Carga convertida ${i}: ${carga} C <br>`;
     }
 
-    // Convertir posiciones
+    //Convertir posiciones
     let unidadPosicionX = document.getElementById(
       "q" + i + "PositionXUnit"
     ).value;
@@ -122,7 +122,7 @@ function calcularCampo() {
   }
 
   document.getElementById("result").innerText = `Resultado Total: 
-    ax = ${campoTotalX.toFixed(2)} N/C, 
-    ay = ${campoTotalY.toFixed(2)} N/C, 
-    az = ${campoTotalZ.toFixed(2)} N/C`;
+    ax = ${campoTotalX.toFixed(2)} V/m, 
+    ay = ${campoTotalY.toFixed(2)} V/m, 
+    az = ${campoTotalZ.toFixed(2)} V/m`;
 }
