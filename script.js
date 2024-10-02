@@ -6,6 +6,8 @@ function convertirCarga(carga, unidad) {
   }
 
   switch (unidad) {
+    case "coul": 
+      return carga;
     case "micro":
       return carga * 1e-6;
     case "nano":
